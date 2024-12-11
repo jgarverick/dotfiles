@@ -7,7 +7,7 @@ echo '[ -z "$ZSH_VERSION" ] && exec "$SHELL" -l' >> ~/.bashrc
 fi
 
 echo '[INFO] Setting up Powerlevel10k...'
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 
 echo '[INFO] Setting up git aliases...'
 git config --global alias.lol "log --oneline --graph --decorate --all"
