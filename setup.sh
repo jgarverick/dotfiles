@@ -15,7 +15,9 @@ echo '[INFO] Do not forget to set your user name and email in the git config!'
 
 echo '[INFO] Copying p10k and .zshrc files...'
 cp .p10k.zsh ~/.p10k.zsh
-cp -f .zshrc ~/.zshrc
+echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> .zshrc
+echo "source ~/.powerlevel10k/powerlevel10k.zsh-theme" >> .zshrc
+echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> .zshrc
 
 echo '[INFO] Setup of oh-my-zsh complete.'
 
